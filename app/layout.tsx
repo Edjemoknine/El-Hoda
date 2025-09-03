@@ -16,9 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Islamic App - Quran & Hadith",
-  description: "Modern Islamic app for reading Quran and Hadith",
-  generator: "v0.app",
+  title: "Moratil - Discover the Truth of Islam",
+  description:
+    "A welcoming platform for Europeans and truth-seekers to learn about Islam through educational content and real conversion stories.",
 };
 
 export default function RootLayout({
