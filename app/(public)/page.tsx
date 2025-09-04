@@ -115,11 +115,11 @@ export default function MoratilLandingPage() {
             {/* Right Column - Masonry Image Layout */}
             <div className="relative">
               {/* Fade overlay at top */}
-              <div className="absolute -top-28 left-0 right-0 h-16 bg-gradient-to-b from-background to-transparent z-10 pointer-events-none"></div>
+              <div className="absolute -top-4 left-0 right-0 h-16 bg-gradient-to-b from-background to-transparent z-10 pointer-events-none"></div>
               {/* Fade overlay at bottom */}
               <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-background to-transparent z-10 pointer-events-none"></div>
 
-              <div className="grid grid-cols-2 gap-4 h-[700px] overflow-hidden">
+              <div className="grid -mt-20 grid-cols-2 gap-4 h-[700px] overflow-hidden">
                 {/* Left column of masonry */}
                 <div className="space-y-4">
                   <div className="bg-gradient-to-br from-emerald-100 to-emerald-200 rounded-2xl p-6 h-40 flex items-center justify-center shadow-lg opacity-60">
@@ -380,7 +380,7 @@ export default function MoratilLandingPage() {
 
       {/* Video Stories Section */}
       <section
-        id="videos"
+        id="stories"
         className="py-20 bg-gradient-to-b from-slate-50 to-background"
       >
         <div className="container mx-auto px-4">
@@ -399,7 +399,7 @@ export default function MoratilLandingPage() {
             <div className="relative bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl p-8 shadow-2xl">
               <div className="aspect-video bg-slate-700 rounded-2xl relative overflow-hidden group cursor-pointer">
                 <img
-                  src="/professional-video-thumbnail-showing-a-european-pe.jpg"
+                  src={"/american-muslim.webp"}
                   alt="Featured Conversion Story"
                   className="w-full h-full object-cover"
                 />
@@ -429,43 +429,37 @@ export default function MoratilLandingPage() {
               {
                 title: "Marcus from Sweden",
                 description: "Engineer discovers Islam through science",
-                thumbnail:
-                  "European man in professional setting discussing his conversion to Islam",
+                thumbnail: "/friday.webp",
                 duration: "12:45",
               },
               {
                 title: "Elena from Italy",
                 description: "Artist finds peace in Islamic community",
-                thumbnail:
-                  "Italian woman artist sharing her journey to Islam with warmth",
+                thumbnail: "group.webp",
                 duration: "8:30",
               },
               {
                 title: "James from UK",
                 description: "Former atheist embraces Islamic faith",
-                thumbnail:
-                  "British man in casual setting explaining his path to Islam",
+                thumbnail: "group-womens.webp",
                 duration: "15:20",
               },
               {
                 title: "Marie from France",
                 description: "Teacher's spiritual awakening story",
-                thumbnail:
-                  "French woman teacher discussing her Islamic conversion experience",
+                thumbnail: "maka.webp",
                 duration: "10:15",
               },
               {
                 title: "David from Netherlands",
                 description: "Businessman finds purpose in Islam",
-                thumbnail:
-                  "Dutch businessman sharing his transformation story to Islam",
+                thumbnail: "quran.webp",
                 duration: "9:45",
               },
               {
                 title: "Anna from Poland",
                 description: "Student's journey to Islamic faith",
-                thumbnail:
-                  "Polish student woman explaining her conversion to Islam journey",
+                thumbnail: "pray.webp",
                 duration: "11:30",
               },
             ].map((video, index) => (
@@ -475,7 +469,7 @@ export default function MoratilLandingPage() {
               >
                 <div className="relative aspect-video overflow-hidden rounded-t-lg">
                   <img
-                    src={`/abstract-geometric-shapes.png?key=md37d&height=200&width=350&query=${video.thumbnail}`}
+                    src={video.thumbnail}
                     alt={video.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
