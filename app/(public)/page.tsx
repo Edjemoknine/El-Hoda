@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Video from "next-video";
-import getStarted from "/videos/get-started.mp4";
+// import getStarted from "/videos/get-started.mp4";
 import {
   Card,
   CardContent,
@@ -395,7 +395,7 @@ export default function MoratilLandingPage() {
               worldwide who found peace and truth in Islam
             </p>
           </div>
-          <Video src={getStarted} />
+          {/* <Video src={getStarted} /> */}
           {/* Featured Video Player */}
           <div className="max-w-4xl mx-auto mb-16">
             <div className="relative bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl p-8 shadow-2xl">
